@@ -1,0 +1,175 @@
+section
+	display: grid
+	grid-template-columns: 1fr 1.2fr
+	+size(100%, 100vh)
+	padding: 3rem
+	position: relative
+
+	.flipper_container
+		position: absolute
+		z-index: 10
+		top: 3rem
+		left: 50%
+		transform: translateX(-50%)
+		display: flex
+		aside
+			flex: 1
+			display: flex
+			align-items: center
+			span
+				margin: 0px 4px
+				display: block
+				background: red
+				border-radius: 120px
+				position: relative
+
+			&:nth-child(1)
+				span
+					&:nth-child(1)
+						+size($small_c, $small_c)
+						transform: translateY(-4px)
+					&:nth-child(2)
+						+size($big_c, $big_c)
+
+			&:nth-child(3)
+				span
+					&:nth-child(1)
+						+size($big_c, $big_c)
+					&:nth-child(2)
+						+size($small_c, $small_c)
+						transform: translateY(4px)
+
+		.flipper
+			+size(70px, 38px)
+			flex: 2
+			margin: 0px 8px
+			text-align: center
+			overflow: hidden
+			div
+				+size(100%, 100%)
+				+flex(flex, center, center, null)
+				position: relative
+			label
+				font-size: 0.8rem
+				text-transform: uppercase
+				font-weight: 400
+				position: absolute
+				user-select: none
+				
+
+	.col_l
+		+flex(flex, null, null, column)
+		#logo_container
+			svg
+				+size(35px, 35px)
+		.social_media_wrapper
+			margin-bottom: 10px
+			a
+				margin: 0px 10px
+				display: inline-block
+				&:nth-child(1)
+					margin-left: 0px
+			i
+				color: black
+		.block
+			flex: 1
+			&:nth-child(2), &:nth-child(3)
+				+flex(flex, center, flex-start, column)
+			&:nth-child(3)
+				padding-top: 2rem
+				p
+					width: 100%
+					max-width: 380px
+					padding-left: 3rem
+					font-size: 12px
+					color: black
+					a
+						color: red
+						font-weight: 800
+			small
+				font-size: 9px
+				font-weight: 800
+				color: red
+				text-transform: uppercase
+
+			a
+				font-size: 14px
+				color: black
+
+	.col_r
+		position: relative
+		+flex(flex, flex-end, flex-start, column)
+		padding-bottom: 2rem
+		div
+			padding: 0.3rem 0rem
+			position: relative
+			&:nth-child(1)
+				h4
+					top: -40%
+					right: -30%
+					
+			&:nth-child(2)
+				transform: translateX(45%)
+				h4
+					right: 0
+					bottom: -20px
+					color: black
+					span
+						color: red
+
+		h1
+			font-size: 200px
+			user-select: none
+			text-transform: uppercase
+			line-height: 0.8
+			white-space: nowrap
+			font-family: 'MT Knox', sans-serif
+			color: black
+			display: inline-block
+
+
+		h4
+			font-size: 2.5rem
+			color: red
+			font-family: 'Knewave', cursive
+			position: absolute
+			user-select: none
+
+		footer
+			+pos(absolute, 0px, 0px, null, null)
+			transform-origin: left top
+			transform: rotate(-90deg) translateX(-100%)
+			p
+				display: inline-block
+				user-select: none
+				white-space: nowrap
+				+pos(absolute, -1rem, 0px, null, null)
+				font-size: 0.6rem
+				color: black
+				font-weight: 800
+				letter-spacing: .2rem
+				text-align: left
+				text-transform: uppercase
+				transform-origin: left top
+				+flex(flex, center, center, null)
+
+				span
+					display: inline-block
+					height: 2px
+					width: 30px
+					background: red
+					margin: 0px 6px
+
+		
+	
+	.download
+		+pos(absolute, null, null, 3rem, 50%)
+		transform: translateX(-50%)
+		a
+			font-size: 12px
+			color: black
+			+flex(flex, null, center, null)
+			font-weight: 600
+			svg
+				+size(12px, 12px)
+				margin-left: 5px

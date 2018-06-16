@@ -1,0 +1,91 @@
+@media (max-width: 875px)
+	section
+		.col_r 
+			div
+				&:first-child
+					h4
+						font-size: 2rem
+						right: 0
+
+
+@media all and (device-width: 768px) and (device-height: 1024px)
+	section
+		.col_l 
+			.block
+				a
+					font-size: 16px
+				small
+					font-size: 12px
+				&:nth-child(3) 
+					p
+						font-size: 16px
+
+@media all and (device-width: 1024px) and (device-height: 1366px)
+	section
+		.flipper_container 
+			.flipper
+				flex: 5
+				label
+					font-size: 21px
+			aside
+				&:first-child
+					span
+						&:nth-child(1)
+							+size(10px, 10px)
+						&:nth-child(2)
+							+size(15px, 15px)
+
+				&:nth-child(3)
+					span
+						&:nth-child(1)
+							+size(15px, 15px)
+						&:nth-child(2)
+							+size(10px, 10px)
+		.col_l 
+			#logo_container 
+				svg
+					+size(60px, 60px)
+			.block
+				small
+					font-size: 18px
+				a
+					font-size: 21px
+
+				&:nth-child(3)
+					p
+						font-size: 21px
+
+			.social_media_wrapper
+				margin-bottom: 2rem
+				a
+					font-size: 28px
+					margin: 0px 20px			
+		.col_r
+			padding-bottom: 4rem
+			h1
+				font-size: 280px
+
+			div
+				&:first-child 
+					h4
+						font-size: 3rem
+
+				&:nth-child(2)
+					h4
+						font-size: 3.5rem
+						right: -10%
+
+			footer
+				p
+					font-size: 1rem
+
+		.download
+			a
+				font-size: 21px
+				svg
+					+size(21px, 21px)
+					margin-left: 10px
+
+
+
+	

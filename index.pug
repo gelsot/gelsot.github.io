@@ -1,0 +1,86 @@
+doctype html
+html(lang="en")
+	head
+		//- Including the head content
+		include tools/jade_includes/head
+	body
+
+		//- Your website or app content goes here
+
+		section
+
+			.flipper_container
+				aside
+					span
+					span
+				.flipper
+					div
+						label Designer
+					
+						label Coder
+					
+						label Thinker
+					
+						label Doer
+				aside
+					span
+					span
+			
+			.col_l
+				.block
+					a(href="/" title="Angel Davcev dot com" alt="Angel Davcev dot com")#logo_container
+						include tools/jade_includes/components/logo
+
+				.block
+					small Get in touch
+					a(href="mailto:angeldavchev@gmail.com" title="Email me" alt="Email me") angeldavchev@gmail.com
+
+				.block
+					.social_media_wrapper
+						a(href="https://www.facebook.com/angel.davcev" target="_blank" title="Angel Davcev on Facebook" alt="Angel Davcev on Facebook")
+							i.fab.fa-facebook
+						
+						a(href="https://twitter.com/" target="_blank" title="Angel Davcev on Twitter" alt="Angel Davcev on Twitter")
+							i.fab.fa-twitter
+						
+						a(href="https://www.instagram.com/artsy_fartsy_shmartsy/" target="_blank" title="Angel Davcev on instagram" alt="Angel Davcev on Instagram")
+							i.fab.fa-instagram
+						
+						a(href="https://www.linkedin.com/in/angel-davcev/" target="_blank" title="Angel Davcev on Linkedin" alt="Angel Davcev on Linkedin")
+							i.fab.fa-linkedin
+						
+						a(href="https://dribbble.com/Gelsot" target="_blank" title="Angel Davcev on Dribbble" alt="Angel Davcev on Dribbble")
+							i.fab.fa-dribbble
+						
+						a(href="https://codepen.io/Gelsot/" target="_blank" title="Angel Davcev on Codepen" alt="Angel Davcev on Codepen")
+							i.fab.fa-codepen
+						
+						a(href="https://github.com/gelsot" target="_blank" title="Angel Davcev on Github" alt="Angel Davcev on Github")
+							i.fab.fa-github
+			
+					p.
+						Award winning senior user interface and user experience designer with proficiency in both mobile and web platforms. Part of the first <a target="_blank" href="http://sc-ventures.com/news/investment-in-letz/" title="Letz raises Venture Capital" alt="Letz raises Venture Capital">VC-backed</a> Macedonian startup.
+
+			.col_r
+				div
+					h4(data-name="Welcome") Welcome to
+					h1(data-name="Angel") Angel
+				div
+					h1(data-name="Davcev") Davcev
+					h4(data-name="Com") <span>.</span>com
+
+
+				footer
+					p Est <span></span>2018
+
+			.download
+				a(href="tools/cv/Angel_Davcev_CV.pdf" title="Angel Davcev CV" alt="Angel Davcev CV" download) Download CV
+					include tools/jade_includes/components/download
+
+
+				
+				
+
+
+		//- Including scripts
+		include tools/jade_includes/scripts
