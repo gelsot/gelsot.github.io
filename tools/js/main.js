@@ -139,4 +139,51 @@ $(document).ready(function(){
 		ease: Quint.easeOut
 	}, 2)
 
+
+	/// Google analytics events tracking
+
+	$('#logo_container svg').on('click', function() {
+		ga('send', 'event', 'Logo', 'Logo clicked');
+	})
+
+	$('.block:nth-child(3) p a').on('click', function() {
+		ga('send', 'event', 'VC-backed', 'Bio link clicked')
+	})
+
+	$('.block:nth-child(2) a').on('click', function() {
+		ga('send', 'event', 'Email', 'Email clicked')
+	})
+
+	$('.download').on('click', function() {
+		ga('send', 'event', 'Download', 'CV download');
+	})
+
+	$('.social_media_wrapper .fa-facebook').on('click', function() {
+		ga('send', 'event', 'Social-link', 'Facebook clicked');
+	})
+
+	$('.social_media_wrapper .fa-twitter').on('click', function() {
+		ga('send', 'event', 'Social-link', 'Twitter clicked');
+	})
+
+	$('.social_media_wrapper .fa-instagram').on('click', function() {
+		ga('send', 'event', 'Social-link', 'Instagram clicked');
+	})
+
+	$('.social_media_wrapper .fa-linkedin').on('click', function() {
+		ga('send', 'event', 'Social-link', 'Linkedin clicked');
+	})
+
+	$('.social_media_wrapper .fa-dribbble').on('click', function() {
+		ga('send', 'event', 'Social-link', 'Dribbble clicked');
+	})
+
+	$('.social_media_wrapper .fa-codepen').on('click', function() {
+		ga('send', 'event', 'Social-link', 'Codepen clicked');
+	})
+
+	$('.social_media_wrapper .fa-github').on('click', function() {
+		ga('send', 'event', 'Social-link', 'Github clicked');
+	})
+
 })
