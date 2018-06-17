@@ -585,9 +585,9 @@ section {
     section .col_r h1 {
       font-size: 110px; } }
 
-@media (max-width: 350px) {
+@media (max-width: 365px) {
   section .col_r h1 {
-    font-size: 80px; }
+    font-size: 90px; }
   section .col_r div:first-child h4 {
     right: 25%;
     top: -45%; }

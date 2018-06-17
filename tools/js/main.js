@@ -16,7 +16,7 @@ $(document).ready(function(){
 	const download = $('.download');
 	const flipper = $('.flipper_container');
 
-	let introAnimation = new TimelineMax();
+	let introAnimation = new TimelineMax({paused: true});
 
 	introAnimation
 		.from($('section'), 1.5, {
