@@ -28,12 +28,12 @@ html(lang="en")
 			
 			.col_l
 				.block
-					a(href="/" title="Angel Davcev dot com" alt="Angel Davcev dot com")#logo_container
+					a(href="/" title="Angel Davcev dot com" alt="Angel Davcev dot com" onclick="ga('send', 'event', 'Logo', 'Logo clicked')")#logo_container
 						include tools/jade_includes/components/logo
 
 				.block
 					small Get in touch
-					a(href="mailto:angeldavchev@gmail.com" title="Email me" alt="Email me") angeldavchev@gmail.com
+					a(href="mailto:angeldavchev@gmail.com" title="Email me" alt="Email me" onclick="ga('send', 'event', 'Email', 'Email clicked')") angeldavchev@gmail.com
 
 				.block
 					.social_media_wrapper
