@@ -30,9 +30,11 @@
 	section
 		.flipper_container 
 			.flipper
+				+size(100px, null)
 				label
 					font-size: 1rem
-		.col_r 
+		.col_r
+			padding-bottom: 5rem
 			h1
 				font-size: 280px
 
@@ -40,6 +42,10 @@
 				&:first-child, &:nth-child(2)
 					h4
 						font-size: 3rem
+
+				&:nth-child(2) 
+					h4
+						bottom: -25%
 
 			footer
 				p
