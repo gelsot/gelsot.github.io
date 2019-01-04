@@ -91,6 +91,13 @@ section
 			flex: 1
 			&:nth-child(2), &:nth-child(3)
 				+flex(flex, center, flex-start, column)
+
+			&:nth-child(2)
+				div
+					+flex(flex, null, flex-start, column)
+					&:nth-child(1)
+						margin-bottom: 20px
+						
 			&:nth-child(3)
 				padding-top: 2rem
 				p

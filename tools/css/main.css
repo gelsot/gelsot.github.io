@@ -237,6 +237,19 @@ section {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column; }
+      section .col_l .block:nth-child(2) div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        section .col_l .block:nth-child(2) div:nth-child(1) {
+          margin-bottom: 20px; }
       section .col_l .block:nth-child(3) {
         padding-top: 2rem; }
         section .col_l .block:nth-child(3) p {
