@@ -6,6 +6,10 @@ $(document).ready(function(){
 	const $span2 = $('.flipper_container aside:nth-child(1) span:nth-child(2)');
 	const $span3 = $('.flipper_container aside:nth-child(3) span:nth-child(1)');
 	const $span4 = $('.flipper_container aside:nth-child(3) span:nth-child(2)');
+	const designer = $('.designer span');
+	const coder = $('.coder span');
+	const thinker = $('.thinker span');
+	const doer = $('.doer span');
 	const logo = $('#logo_container svg');
 	const spanSpeed = 1.5;
 	const angel = $("h1[data-name='Angel']");
@@ -17,6 +21,7 @@ $(document).ready(function(){
 	const flipper = $('.flipper_container');
 
 	let introAnimation = new TimelineMax({paused: true});
+	let spinner = new TimelineMax({paused: true, repeat: -1, repeatDelay: 0.5, ease: Expo.easeInOut});
 
 	introAnimation
 		.from($('section'), 1.5, {
@@ -99,6 +104,44 @@ $(document).ready(function(){
 		})
 	})
 
+	TweenMax.set([designer, coder, thinker, doer], {autoAlpha: 0, y: 10})
+
+	spinner
+		.staggerTo(designer, 0.3, {
+			autoAlpha: 1,
+			y: 0
+		}, 0.1, '+=0.5')
+		.staggerTo(designer, 0.3, {
+			autoAlpha: 0,
+			y: -10
+		}, 0.1, '+=0.8')
+		.staggerTo(coder, 0.3, {
+			autoAlpha: 1,
+			y: 0
+		}, 0.1, '+=0.5')
+		.staggerTo(coder, 0.3, {
+			autoAlpha: 0,
+			y: -10,
+		}, 0.1, '+=0.8')
+		.staggerTo(thinker, 0.3, {
+			autoAlpha: 1,
+			y: 0
+		}, 0.1, '+=0.5')
+		.staggerTo(thinker, 0.3, {
+			autoAlpha: 0,
+			y: -10
+		}, 0.1, '+=0.8')
+		.staggerTo(doer, 0.3, {
+			autoAlpha: 1,
+			y: 0
+		}, 0.1, '+=0.5')
+		.staggerTo(doer, 0.3, {
+			autoAlpha: 0,
+			y: -10
+		}, 0.1, '+=0.8')
+
+	spinner.play();
+
 	TweenMax.to($span1, spanSpeed, {
 		y: 6,
 		yoyo: true,
@@ -127,17 +170,17 @@ $(document).ready(function(){
 		ease: Quint.easeInOut
 	})
 
-	const h = $('.flipper').height();
-	let tl = new TimelineMax({
-		repeat: -1
-	})
+	// const h = $('.flipper').height();
+	// let tl = new TimelineMax({
+	// 	repeat: -1
+	// })
 
-	tl.staggerFrom($('.flipper div label'), 1, {
-		scaleY: 0,
-		repeat: 1,
-		yoyo: true,
-		ease: Quint.easeOut
-	}, 2)
+	// tl.staggerFrom($('.flipper div label'), 1, {
+	// 	scaleY: 0,
+	// 	repeat: 1,
+	// 	yoyo: true,
+	// 	ease: Quint.easeOut
+	// }, 2)
 
 
 	/// Google analytics events tracking

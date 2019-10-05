@@ -184,6 +184,8 @@ section {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none; }
+      section .flipper_container .flipper span {
+        display: inline-block; }
   section .col_l {
     display: -webkit-box;
     display: -ms-flexbox;
