@@ -104,41 +104,41 @@ $(document).ready(function(){
 		})
 	})
 
-	TweenMax.set([designer, coder, thinker, doer], {autoAlpha: 0, y: 10})
+	TweenMax.set([designer, coder, thinker, doer], {autoAlpha: 0, y: 5})
 
 	spinner
 		.staggerTo(designer, 0.3, {
 			autoAlpha: 1,
 			y: 0
-		}, 0.1, '+=0.5')
+		}, 0.05)
 		.staggerTo(designer, 0.3, {
 			autoAlpha: 0,
-			y: -10
-		}, 0.1, '+=0.8')
+			y: -5
+		}, 0.05, '+=0.8')
 		.staggerTo(coder, 0.3, {
 			autoAlpha: 1,
 			y: 0
-		}, 0.1, '+=0.5')
+		}, 0.05, '+=0.5')
 		.staggerTo(coder, 0.3, {
 			autoAlpha: 0,
-			y: -10,
-		}, 0.1, '+=0.8')
+			y: -5,
+		}, 0.05, '+=0.8')
 		.staggerTo(thinker, 0.3, {
 			autoAlpha: 1,
 			y: 0
-		}, 0.1, '+=0.5')
+		}, 0.05, '+=0.5')
 		.staggerTo(thinker, 0.3, {
 			autoAlpha: 0,
-			y: -10
-		}, 0.1, '+=0.8')
+			y: -5
+		}, 0.05, '+=0.8')
 		.staggerTo(doer, 0.3, {
 			autoAlpha: 1,
 			y: 0
-		}, 0.1, '+=0.5')
+		}, 0.05, '+=0.5')
 		.staggerTo(doer, 0.3, {
 			autoAlpha: 0,
-			y: -10
-		}, 0.1, '+=0.8')
+			y: -5
+		}, 0.05, '+=0.8')
 
 	spinner.play();
 
