@@ -1,7 +1,8 @@
 section
 	display: grid
 	grid-template-columns: 1fr 1.2fr
-	+size(100%, 100vh)
+	+size(100%, auto)
+	min-height: 100vh
 	padding: 1rem
 	position: relative
 
@@ -189,7 +190,7 @@ section
 		
 	
 	.download
-		+pos(absolute, null, null, 2rem, 50%)
+		+pos(absolute, null, null, 1rem, 50%)
 		transform: translateX(-50%)
 		a
 			font-size: 12px

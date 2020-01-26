@@ -108,7 +108,8 @@ section {
   -ms-grid-columns: 1fr 1.2fr;
   grid-template-columns: 1fr 1.2fr;
   width: 100%;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   padding: 1rem;
   position: relative; }
   section .flipper_container {
@@ -372,7 +373,7 @@ section {
           margin: 0px 6px; }
   section .download {
     position: absolute;
-    bottom: 2rem;
+    bottom: 1rem;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -548,8 +549,8 @@ section {
 @media (max-width: 420px) {
   section {
     padding: 1rem;
-    -ms-grid-rows: auto auto 40px;
-    grid-template-rows: auto auto 40px; }
+    -ms-grid-rows: 1.3fr 1fr 40px;
+    grid-template-rows: 1.3fr 1fr 40px; }
     section .flipper_container {
       top: 1.5rem; }
     section .col_r h1 {
@@ -573,7 +574,7 @@ section {
   section .col_r div:nth-child(2) h4 {
     font-size: 2rem; }
   section .col_r h1 {
-    font-size: 110px; } }
+    font-size: 100px; } }
 
 @media (max-width: 365px) {
   section .col_r h1 {
