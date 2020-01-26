@@ -159,8 +159,9 @@ section {
         transform: translateY(4px); }
     section .flipper_container .flipper {
       width: 70px;
-      height: 38px;
+      height: auto;
       margin: 0px 8px;
+      padding: 7px 0px;
       text-align: center;
       overflow: hidden; }
       section .flipper_container .flipper div {
