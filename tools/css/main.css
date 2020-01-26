@@ -288,7 +288,7 @@ section {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-bottom: 2rem; }
+    padding: 2rem 0; }
     section .col_r div {
       padding: 0.3rem 0rem;
       position: relative; }
@@ -400,8 +400,8 @@ section {
   section {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    -ms-grid-rows: 1.5fr 1fr;
-    grid-template-rows: 1.5fr 1fr; }
+    -ms-grid-rows: auto;
+    grid-template-rows: auto; }
     section .col_l {
       -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
