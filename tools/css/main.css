@@ -547,7 +547,7 @@ section {
 
 @media (max-width: 420px) {
   section {
-    padding: 2rem;
+    padding: 1rem;
     -ms-grid-rows: 1.2fr 1fr 40px;
     grid-template-rows: 1.2fr 1fr 40px; }
     section .flipper_container {
