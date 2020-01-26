@@ -26,7 +26,7 @@
 @media (max-width: 420px)
 	section 
 		padding: 1rem
-		grid-template-rows: 1.2fr 1fr 40px
+		grid-template-rows: auto auto 40px
 		.flipper_container
 			top: 1.5rem
 		.col_r
@@ -37,7 +37,8 @@
 					h4
 						right: 10%
 
-		.col_l 
+		.col_l
+			padding-top: 20px
 			.block
 				&:nth-child(2)
 					padding: 0.5rem 0rem
