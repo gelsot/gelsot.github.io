@@ -117,9 +117,9 @@ section {
     z-index: 10;
     top: 1rem;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-55%);
+    -ms-transform: translateX(-55%);
+    transform: translateX(-55%);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
@@ -552,7 +552,7 @@ section {
     -ms-grid-rows: 1.3fr 1fr 40px;
     grid-template-rows: 1.3fr 1fr 40px; }
     section .flipper_container {
-      top: 1.5rem; }
+      top: 1rem; }
     section .col_r h1 {
       font-size: 130px; }
     section .col_r div:first-child h4, section .col_r div:nth-child(2) h4 {
